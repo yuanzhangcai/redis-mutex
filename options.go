@@ -8,9 +8,9 @@ import (
 var (
 	defaultPrefix         = "mutex_"                // 默认redis前缀
 	defaultRedisServer    = "127.0.0.1:6379"        // 默认redis地址
-	defaultTimeout        = 3000 * time.Millisecond  // 默认超时时间
+	defaultTimeout        = 3000 * time.Millisecond // 默认超时时间
 	defaultTTL            = 5000 * time.Millisecond // 默认存活时间
-	defaultAutoRefreshTTL = true                    // 默认自动刷新锁的存活时间
+	defaultAutoRefreshTTL = false                   // 默认自动刷新锁的存活时间
 )
 
 // InitOptions 分布式锁参数
